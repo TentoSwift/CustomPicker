@@ -21,41 +21,34 @@ https://github.com/user-attachments/assets/07003a3a-fdb9-4cce-84cd-930c1530dd6e
 import Foundation
 import CustomPicker
 
-enum SortType: Equatable, CaseIterable {
-    case title
-    case addDate
-    case artist
+enum SortType: String, Item {
+    case title // 作成日
+    case addDate       // 価格
+    case artist        // 名前
+    
+    // MARK: - Item Protocol Requirements
     
     var label: String {
         switch self {
-        case .title:
-            return "タイトル"
-        case .addDate:
-            return "追加日"
-        case .artist:
-            return "アーティスト"
+        case .title: return "タイトル順"
+        case .addDate: return "追加日順"
+        case .artist: return "アーティスト"
         }
     }
     
-    var descendingLabel: String {
+    var firstLabel: String {
         switch self {
-        case .title:
-            return "降順"
-        case .addDate:
-            return "新しい順"
-        case .artist:
-            return "降順"
+        case .title: return "昇順"
+        case .addDate: return "新しい順"
+        case .artist: return "昇順"
         }
     }
-    
-    var ascendingLabel: String {
+
+    var secondLabel: String {
         switch self {
-        case .title:
-            return "昇順"
-        case .addDate:
-            return "古い順"
-        case .artist:
-            return "昇順"
+        case .title: return "降順"
+        case .addDate: return "古い順"
+        case .artist: return "降順"
         }
     }
 }
