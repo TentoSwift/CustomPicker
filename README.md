@@ -22,9 +22,9 @@ import Foundation
 import CustomPicker
 
 enum SortType: String, Item {
-    case title // 作成日
-    case addDate       // 価格
-    case artist        // 名前
+    case title 
+    case addDate     
+    case artist     
     
     // MARK: - Item Protocol Requirements
     
