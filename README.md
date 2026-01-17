@@ -2,8 +2,9 @@
 
 This provides a versatile sort order selection menu component with ascending/descending toggle support in SwiftUI.<br>`CustomPicker` は、SwiftUI で **並び替えの項目選択** と **昇順／降順トグル** をまとめて提供する，Menu用コンポーネントです．
 
+https://github.com/user-attachments/assets/05e50c0b-caaf-45b3-9aa0-4b69ca9b385c
 
-https://github.com/user-attachments/assets/07003a3a-fdb9-4cce-84cd-930c1530dd6e
+
 
 
 ## Requirements
